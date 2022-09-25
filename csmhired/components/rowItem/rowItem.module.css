@@ -1,0 +1,25 @@
+.rowItem{
+    width: 70%;
+    border-radius: 1rem;
+    height: 7rem;
+    border: solid 1px #aaa;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+}
+
+.iconContainer {
+    width: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description {
+    margin-top: 0.5rem
+}

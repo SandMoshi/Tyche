@@ -108,6 +108,17 @@
   margin-left: 0.5rem;
 }
 
+/* EVERYTHING ABOVE IS FROM NEXT JS */
+.searchBar{
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* MOST OF MEDIA QUERIES ARE FROM NEXT */
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
