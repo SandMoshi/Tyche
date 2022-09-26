@@ -111,10 +111,15 @@
 /* EVERYTHING ABOVE IS FROM NEXT JS */
 .searchBar{
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
+
+.quickFiltersRow{
+  margin-bottom: 2rem;
+}
+
 
 
 /* MOST OF MEDIA QUERIES ARE FROM NEXT */

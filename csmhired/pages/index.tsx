@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import SearchBar from '../components/searchBar/searchBar'
 import RowItem from '../components/rowItem/rowItem'
+import QuickFiltersRow from '../components/quickFiltersRow/quickFiltersRow'
 import icon1 from '../example/images/logo-svgrepo-com.svg';
 import icon2 from '../example/images/logo-svgrepo-com (1).svg';
 import icon3 from '../example/images/logo-svgrepo-com (2).svg';
@@ -32,7 +33,9 @@ const Home: NextPage = () => {
         <div className={styles.searchBar}>
           <SearchBar/>
         </div>
-
+        <div className={styles.quickFiltersRow} >
+          <QuickFiltersRow />
+        </div>
         <RowItem 
           title="Company A"
           description="Better perks, Better pay. Company A."
