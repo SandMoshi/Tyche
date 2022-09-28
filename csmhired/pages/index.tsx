@@ -1,6 +1,7 @@
 // imports
 import Head from 'next/head'
 import Image from 'next/image'
+import NavBar from '../components/navbar/navbar'
 import SearchBar from '../components/searchBar/searchBar'
 import RowItem from '../components/rowItem/rowItem'
 import QuickFiltersRow from '../components/quickFiltersRow/quickFiltersRow'
@@ -24,6 +25,14 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <NavBar 
+          links = {[
+            {href:'#Jobs', text: 'Jobs'},
+            {href:'#Blog', text: 'Blog'},
+            {href:'#Resources', text: 'Resources'},
+            {href:'#Post', text: 'Post a Listing'}
+          ]}
+        />
         <h1 className={styles.title}>
           <strong>CSM</strong>hired
         </h1>
