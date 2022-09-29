@@ -8,6 +8,7 @@ import QuickFiltersRow from '../components/quickFiltersRow/quickFiltersRow'
 import icon1 from '../example/images/logo-svgrepo-com.svg';
 import icon2 from '../example/images/logo-svgrepo-com (1).svg';
 import icon3 from '../example/images/logo-svgrepo-com (2).svg';
+import { navLinks } from '../data/constants';
 
 // type imports
 import type { NextPage } from 'next'
@@ -26,12 +27,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <NavBar 
-          links = {[
-            {href:'#Jobs', text: 'Jobs'},
-            {href:'#Blog', text: 'Blog'},
-            {href:'#Resources', text: 'Resources'},
-            {href:'#Post', text: 'Post a Listing'}
-          ]}
+          links = {navLinks}
         />
         <h1 className={styles.title}>
           <strong>CSM</strong>hired
