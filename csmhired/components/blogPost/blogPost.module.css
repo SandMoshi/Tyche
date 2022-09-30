@@ -1,0 +1,89 @@
+.blogPostContainer {
+    margin: 8rem auto auto auto;
+    width: 60%;
+}
+
+.articleHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: solid 2px #e8e8e8;
+    border-radius: 1rem;
+    padding: 0rem 0px;
+    height: 100px;
+}
+
+.authorImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: black;
+    margin: 0rem 1rem;
+}
+
+.articleInfo {
+    width: 60%;
+}
+
+.articleDetails {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.articleInfo span {
+    margin-right: 0.25rem;
+}
+
+.articleInfo span:not(:first-child):before {
+    content: ' - ';
+    display: inline;
+    margin-right: 0.25rem;
+}
+
+.postTitle {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.postTagline {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    margin-bottom: 3rem;
+}
+
+.article {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 5rem;
+}
+
+.article p {
+    margin-bottom: 4rem;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+}
+
+.sharingLinks {
+    height: 100%;
+    display: flex;
+    padding: 0.5rem 0px;
+    margin-left: auto;
+}
+.sharingLinks a {
+    margin-right: 1rem;
+    line-height: 40px;
+    vertical-align: baseline;
+}
+
+.sharingLinks span {
+    vertical-align: sub;
+}
+
+.sharingLinks a:hover {
+    fill: red;
+}

@@ -5,4 +5,9 @@ const navLinks = [
     {href:'#Post', text: 'Post a Listing'}
 ]
 
-export { navLinks }
+const socialMediaLinks = {
+    linkedInUrl: 'https://www.linkedin.com/company/82551517',
+    facebookUrl: 'https://www.facebook.com/CSMhired',
+}
+
+export { navLinks, socialMediaLinks }
