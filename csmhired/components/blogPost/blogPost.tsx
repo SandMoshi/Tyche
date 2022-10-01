@@ -42,10 +42,10 @@ function BlogPost(props:Props) {
             </p>
           </div>
           <div className={styles.sharingLinks}>
-            {socialMediaLinks.linkedInUrl && <a href={socialMediaLinks.linkedInUrl}><Image src={linkedInLogo} alt="LinkedIn Link" width={20} height={20} /></a>}
-            {socialMediaLinks.facebookUrl && <a href={socialMediaLinks.facebookUrl}><Image src={facebookLogo} alt="Facebook Link" width={20} height={20}  /></a>}
+            {socialMediaLinks.linkedInUrl && <a href={socialMediaLinks.linkedInUrl}><Image src={linkedInLogo} alt="LinkedIn Link" title="LinkedIn" width={20} height={20} /></a>}
+            {socialMediaLinks.facebookUrl && <a href={socialMediaLinks.facebookUrl}><Image src={facebookLogo} alt="Facebook Link" width={20} height={20} title="Facebook"  /></a>}
             {/* TODO - programatically copy current url to clipboard */}
-            <a href={'/404'}><Image src={hyperlinkLogo} alt="Copy Web Link" width={20} height={20} />Copy Link</a>
+            <a href={'/404'}><Image src={hyperlinkLogo} alt="Copy Web Link" title="Copy Web Link" width={20} height={20} /></a>
           </div>
         </div>
         <h1 className={styles.postTitle}>{props.title}</h1>
@@ -53,7 +53,9 @@ function BlogPost(props:Props) {
           {props.tagline}
         </h3>
         {props.heroImage != null &&
-            <Image className={styles.heroImage} width={undefined} height={undefined} src={props.heroImage || exampleImage} alt={props.heroImageAlt || 'article image'}/>
+            <div className={styles.heroImageContainer} >
+                <Image className={styles.heroImage} src={props.heroImage || exampleImage} alt={props.heroImageAlt || 'article image'}  height={undefined} width={undefined}/>
+            </div>
         }
         <article className={styles.article}>
           {props.content.split('\\n').map((paragraph, index) => <p key={`paragarph${index}`}>{paragraph}</p>)}
