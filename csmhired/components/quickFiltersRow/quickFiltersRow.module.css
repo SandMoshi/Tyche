@@ -7,4 +7,10 @@
 
 .container > select {
     margin: auto 0.5rem;
+    font-family: Poppins;
+}
+
+.container option {
+    font-size: 1rem;
+    font-family: Poppins;
 }
