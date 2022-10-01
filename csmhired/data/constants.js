@@ -1,8 +1,8 @@
 const navLinks = [
-    {href:'#Jobs', text: 'Jobs'},
-    {href:'#Blog', text: 'Blog'},
-    {href:'#Resources', text: 'Resources'},
-    {href:'#Post', text: 'Post a Listing'}
+    {href:'/', text: 'Jobs'},
+    {href:'/blog', text: 'Blog'},
+    {href:'/resources', text: 'Resources'},
+    {href:'/post', text: 'Post a Listing'}
 ]
 
 const socialMediaLinks = {
