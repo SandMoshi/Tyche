@@ -44,7 +44,13 @@ const BlogOnly: NextPage = () => {
           <Image src={instagramLogo} alt="CSM hired Instagram page" title="CSM hired social media" />
         </a>
       </div>
-      <div className={styles.postsContainer}>
+      <div className={styles.comingSoon}>
+        <h1>COMING</h1>
+        <h1>SOON!</h1>
+        <h1>NOVEMBER 2022</h1>
+        <a href="https://www.linkedin.com/company/csmhired/">Click here for more info</a>
+      </div>
+      {/* <div className={styles.postsContainer}>
         <BlogRowItem
           image={mountainImage}
           title="Example Title - Do something great, be bold."
@@ -69,7 +75,7 @@ const BlogOnly: NextPage = () => {
           readTime="5 mins"
           postId={"003"}
         />
-      </div>
+      </div> */}
       <div className={styles.background}></div>
     </div>
   );

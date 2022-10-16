@@ -1,3 +1,15 @@
+.comingSoon {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.comingSoon h1 {
+  margin: 1rem;
+}
+
 .background {
   height: 100vh;
   width: 100vw;
@@ -29,7 +41,6 @@
 .socialMediaLinks a {
   margin-right: 1rem;
 }
-
 
 .socialMediaLinks img {
   height: 1.5rem !important;
@@ -223,4 +234,19 @@ h2.tagline {
     99% 50.03%,
     100% 50.74%
   );
+}
+
+@media (max-width: 700px) {
+  /* body {
+    font-size: 12px;
+  } */
+
+ .mainBackground{
+  height: 150px;
+ }
+
+ .wave {
+  height: 200px;
+  margin-top: 150px;
+ }
 }
