@@ -1,7 +1,6 @@
 // VENDOR imports
 import Image from "next/image";
 
-
 // imports
 import NavBar from "../components/navbar/navbar";
 import { navLinks } from "../data/constants";
@@ -19,13 +18,15 @@ const BlogOnly: NextPage = () => {
       <div className={styles.mainBackground}>
         <div className={styles.wave}></div>
         <div className={styles.tada}>
-          <Image src={tada} alt="tada!" height="450" width="450" />
+          <Image src={tada} alt="tada!" height="300" width="300" />
         </div>
       </div>
-      <h1 className={styles.title}>
-        <span>CSM</span>hired
-      </h1>
-      <h2 className={styles.miniBold}>BLOG</h2>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.title}>
+          <span>CSM</span>hired
+        </h1>
+        <h1 className={styles.miniBold}>BLOG</h1>
+      </div>
       <h2 className={styles.tagline}>Helping CSMs find their dream job</h2>
     </>
   );
