@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 // imports
+import Header from "../components/header/index";
 import NavBar from "../components/navbar/navbar";
 import { navLinks } from "../data/constants";
-import tada from "../data/images/svg/partypopper-svgrepo-com.svg";
 import { BlogRowItem } from "../components/blog/blogRowItem/blogRowItem";
 import mountainImage from "../example/images/pexels-photo-572897.jpeg";
 import fbLogo from "../data/images/svg/facebook-svgrepo-com.svg";
@@ -22,12 +22,7 @@ import styles from "../styles/blogOnly.module.css";
 const BlogOnly: NextPage = () => {
   return (
     <div>
-      <div className={styles.mainBackground}>
-        <div className={styles.wave}></div>
-        <div className={styles.tada}>
-          <Image src={tada} alt="tada!" height="300" width="300" />
-        </div>
-      </div>
+      <Header />
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>
           <span>CSM</span>hired
