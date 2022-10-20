@@ -22,7 +22,7 @@ type Props = {
 const BlogRowItem = (props: Props) => {
   return (
     <div className={styles.container}>
-      <a href={`/${props.postId}`}>
+      <a href={`/blog/posts/${props.postId}`}>
         <div className={styles.imageContainer}>
           {props.blankImage ? (
             <div style={{ background: "#d3c4cf", height: "256px" }}></div>

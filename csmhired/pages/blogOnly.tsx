@@ -20,12 +20,6 @@ import type { NextPage } from "next";
 import styles from "../styles/blogOnly.module.css";
 
 const BlogOnly: NextPage = () => {
-  const [blogPosts, setBlogPosts] = useState([])
-  useEffect(() => {
-    console.log(dataJSON.posts);
-  }, [])
-
-
   return (
     <div>
       <div className={styles.mainBackground}>
@@ -59,7 +53,7 @@ const BlogOnly: NextPage = () => {
                     title={post.title}
                     date={post.date}
                     readTime={post.readTime}
-                    postId={post.postID}
+                    postId={post.postId}
                     author={post.author}
                     description={post.description}
                   />
