@@ -44,7 +44,7 @@ const BlogOnly: NextPage = () => {
       <div className={styles.postsContainer}>
         {dataJSON.posts.map( (post, index) => {
           return <BlogRowItem 
-                    key={`blogpost-id-${post.postID}-${index}`}
+                    key={`blogpost-id-${post.postId}-${index}`}
                     title={post.title}
                     date={post.date}
                     readTime={post.readTime}
