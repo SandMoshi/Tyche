@@ -1,5 +1,6 @@
 // VENDOR imports
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 // imports
 import NavBar from "../components/navbar/navbar";
@@ -10,6 +11,7 @@ import mountainImage from "../example/images/pexels-photo-572897.jpeg";
 import fbLogo from "../data/images/svg/facebook-svgrepo-com.svg";
 import instagramLogo from "../data/images/svg/instagram-svgrepo-com.svg";
 import linkedinLogo from "../data/images/svg/linkedin-svgrepo-com.svg";
+import dataJSON from "../public/blogposts.json";
 
 // type imports
 import type { NextPage } from "next";
@@ -18,6 +20,12 @@ import type { NextPage } from "next";
 import styles from "../styles/blogOnly.module.css";
 
 const BlogOnly: NextPage = () => {
+  const [blogPosts, setBlogPosts] = useState([])
+  useEffect(() => {
+    console.log(dataJSON.posts);
+  }, [])
+
+
   return (
     <div>
       <div className={styles.mainBackground}>
@@ -44,38 +52,19 @@ const BlogOnly: NextPage = () => {
           <Image src={instagramLogo} alt="CSM hired Instagram page" title="CSM hired social media" />
         </a>
       </div>
-      <div className={styles.comingSoon}>
-        <h1>COMING</h1>
-        <h1>SOON!</h1>
-        <h1>NOVEMBER 2022</h1>
-        <a href="https://www.linkedin.com/company/csmhired/">Click here for more info</a>
+      <div className={styles.postsContainer}>
+        {dataJSON.posts.map( (post, index) => {
+          return <BlogRowItem 
+                    key={`blogpost-id-${post.postID}-${index}`}
+                    title={post.title}
+                    date={post.date}
+                    readTime={post.readTime}
+                    postId={post.postID}
+                    author={post.author}
+                    description={post.description}
+                  />
+        })}
       </div>
-      {/* <div className={styles.postsContainer}>
-        <BlogRowItem
-          image={mountainImage}
-          title="Example Title - Do something great, be bold."
-          description="Donec dolor augue, posuere et congue eget, tincidunt eu eros. Morbi ornare ornare massa sed placerat. Nulla cursus, diam eu euismod varius, massa tortor fermentum felis, vitae consequat orci ex sed ex."
-          date="Oct 2022"
-          readTime="5 mins"
-          postId={"001"}
-        />
-        <BlogRowItem
-          blankImage
-          image={mountainImage}
-          title="Example Title - Do something great, be bold."
-          description="Donec dolor augue, posuere et congue eget, tincidunt eu eros. Morbi ornare ornare massa sed placerat. Nulla cursus, diam eu euismod varius, massa tortor fermentum felis, vitae consequat orci ex sed ex."
-          date="Oct 2022"
-          readTime="5 mins"
-          postId={"002"}
-        />
-        <BlogRowItem
-          title="Example Title - Do something great, be bold."
-          description="Donec dolor augue, posuere et congue eget, tincidunt eu eros. Morbi ornare ornare massa sed placerat. Nulla cursus, diam eu euismod varius, massa tortor fermentum felis, vitae consequat orci ex sed ex."
-          date="Oct 2022"
-          readTime="5 mins"
-          postId={"003"}
-        />
-      </div> */}
       <div className={styles.background}></div>
     </div>
   );
