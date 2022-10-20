@@ -8,14 +8,15 @@ import mountainImage from "../../../example/images/pexels-photo-572897.jpeg";
 import styles from "./blogRowItem.module.css";
 
 type Props = {
-  image?: StaticImageData;
-  imageAltText?: string;
-  title: string;
-  description?: string;
-  date?: string;
-  readTime?: string;
-  blankImage?: boolean;
-  postId: string;
+  image?: StaticImageData
+  imageAltText?: string
+  title: string
+  description?: string
+  date?: string
+  readTime?: string
+  blankImage?: boolean
+  postId: string
+  author?: string
 };
 
 const BlogRowItem = (props: Props) => {
@@ -35,9 +36,12 @@ const BlogRowItem = (props: Props) => {
         </div>
         <h2 className={styles.firstLine}>{props.title}</h2>
         <p className={styles.secondLine}>{props.description || ""}</p>
+        {props.author && <p className={styles.authorLine}>
+          <span>{props.author}</span>
+        </p>}
         <p className={styles.thirdLine}>
           <span>{props.date}</span>
-          <span>{props.readTime} read</span>
+          <span>{props.readTime} mins read</span>
         </p>
       </a>
     </div>

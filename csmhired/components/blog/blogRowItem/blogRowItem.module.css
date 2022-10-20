@@ -44,3 +44,14 @@
     text-transform: uppercase;
     font-size: 0.75rem;
 }
+
+.authorLine {
+    margin: -1rem auto -1.5rem auto;
+}
+
+.authorLine span{
+    margin-right: 0.75rem;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
