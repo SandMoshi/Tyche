@@ -26,6 +26,11 @@
     object-fit: none;
 }
 
+.container:hover .imageContainer img {
+    opacity: 0.75;
+    filter: brightness(0.75) contrast(1.5);
+}
+
 .thirdLine span:not(:first-child)::before{
     content:'•';
     content:'❖';
