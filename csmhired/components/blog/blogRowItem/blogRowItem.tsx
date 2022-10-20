@@ -34,8 +34,8 @@ const BlogRowItem = (props: Props) => {
             />
           )}
         </div>
-        <h2 className={styles.firstLine}>{props.title}</h2>
-        <p className={styles.secondLine}>{props.description || ""}</p>
+        <h2 className={styles.titleLine}>{props.title}</h2>
+        <p className={styles.description}>{props.description || ""}</p>
         {props.author && <p className={styles.authorLine}>
           <span>{props.author}</span>
         </p>}

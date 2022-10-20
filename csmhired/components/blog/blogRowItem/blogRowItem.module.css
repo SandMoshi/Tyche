@@ -46,7 +46,7 @@
 }
 
 .authorLine {
-    margin: -1rem auto -1.5rem auto;
+    margin: 0rem auto -1.5rem auto;
 }
 
 .authorLine span{
@@ -54,4 +54,16 @@
     font-family: 'Roboto';
     text-transform: uppercase;
     font-size: 0.75rem;
+}
+
+.titleLine {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.description{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #4e4e4e;
 }
