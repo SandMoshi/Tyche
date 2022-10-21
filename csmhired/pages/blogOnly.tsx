@@ -22,14 +22,7 @@ import styles from "../styles/blogOnly.module.css";
 const BlogOnly: NextPage = () => {
   return (
     <div>
-      <Header />
-      <div className={styles.titleContainer}>
-        <h1 className={styles.title}>
-          <span>CSM</span>hired
-        </h1>
-        <h1 className={styles.miniBold}>BLOG</h1>
-      </div>
-      <h2 className={styles.tagline}>Helping CSMs find their dream job</h2>
+      <Header includeTitle includeSubtitle/>
       <div className={styles.socialMediaLinks}>
         <a href="https://www.linkedin.com/company/csmhired/">
           <Image src={linkedinLogo} alt="CSM hired LinkedIn page" title="CSM hired social media" />

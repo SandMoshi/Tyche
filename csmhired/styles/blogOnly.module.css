@@ -41,40 +41,6 @@
   filter: saturate(0) brightness(1) invert();
 }
 
-.titleContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  color: white;
-  margin-top: 4rem;
-  z-index: 0;
-}
-
-.title {
-  font-size: 6rem;
-  font-weight: 300;
-}
-
-.title span {
-  font-weight: 600;
-}
-
-.tagline {
-  font-family: Poppins;
-  /* font-style: italic; */
-  font-weight: 300;
-}
-
-h2.tagline {
-  color: white;
-  text-align: center;
-}
-
 .title,
 .description {
   text-align: center;
@@ -85,16 +51,6 @@ h2.tagline {
   line-height: 1.5;
   font-size: 1.5rem;
   color: white;
-}
-
-.miniBold {
-  font-size: 6rem;
-  opacity: 0.5;
-  color: white;
-  text-align: center;
-  margin-bottom: 0rem;
-  margin-top: 3.5rem;
-  margin-left: 2rem;
 }
 
 .postsContainer {
