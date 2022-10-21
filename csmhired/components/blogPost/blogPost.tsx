@@ -31,7 +31,7 @@ function BlogPost(props:Props) {
         <div className={styles.articleHeader}>
           <div className={styles.authorImage}>
             {props.authorIcon != null && 
-                <Image src={exampleIcon} width={undefined} height={undefined} alt={props.heroImageAlt}/>
+                <Image src={exampleIcon} width={40} height={40} alt={props.heroImageAlt}/>
             }
           </div>
           <div className={styles.articleInfo}>
@@ -58,7 +58,7 @@ function BlogPost(props:Props) {
             </div>
         }
         <article className={styles.article}>
-          {props.content.split('\\n').map((paragraph, index) => <p key={`paragarph${index}`}>{paragraph}</p>)}
+          {props.content && props.content.split(/\n            \n            |\n\n/).map((paragraph, index) => <p key={`paragarph${index}`}>{paragraph}</p>)}
         </article>
       </div>
     </>
