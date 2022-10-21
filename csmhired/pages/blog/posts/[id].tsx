@@ -2,15 +2,39 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-
 // imports
 import Header from "../../../components/header/index";
-import blogJSON from "../../../public/blogposts.json";
+import NavBar from "../../../components/navbar/navbar";
+import { navLinks } from "../../../data/constants";
+import exampleImage from "../../../example/images/seascape-g20cb2aa3d_1920.jpg";
+import BlogPost from "../../../components/blogPost/blogPost";
+import blogPostsJSON from "../../../public/blogposts.json";
 
 // type imports
-import { GetStaticProps, GetStaticPaths  } from 'next';
+import { GetStaticProps, GetStaticPaths } from "next";
 
-const BlogPost = (props: {postId: string}) => {
+// style imports
+import styles from "./posts.module.css";
+
+type PostData = {
+  postId: string;
+  title: string;
+  author: string;
+  date: string;
+  readTime: string;
+  links: {
+    medium: string;
+  };
+  description: string;
+  content: string;
+};
+
+type Props = {
+  postId: string;
+  blogPost: PostData;
+};
+
+const PostPage = (props: Props) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -19,32 +43,52 @@ const BlogPost = (props: {postId: string}) => {
       const postId = router.query.id as string;
       console.log("Sand", postId);
     }
+    console.log(props.blogPost)
   }, [router.isReady, router.query.id]);
 
-  console.log(props)
+  console.log(props);
 
   return (
     <div>
-      <Header />
-      <h1>Test</h1>
-      <h1>id {props.postId}</h1>
+      <Header includeTitle includeSubtitle />
+      <>
+        <NavBar links={navLinks} />
+        <BlogPost
+          heroImage={exampleImage}
+          heroImageAlt="example photo"
+          title={props.blogPost.title}
+          tagline={props.blogPost.description}
+          authorName={props.blogPost.author}
+          authorIcon="example"
+          readTime={`${props.blogPost.readTime} mins`}
+          date={props.blogPost.date}
+          content={props.blogPost.content}
+        />
+      </>
+      );
     </div>
   );
 };
 
 // These two functions get called at build time and generate possible paths
 export const getStaticProps: GetStaticProps = (context) => {
-  return { props: { postId: context.params?.id } };
-}
+  const blogPost = blogPostsJSON.posts.filter(
+    (post) => post.postId == context.params?.id
+  )[0];
+
+  return {
+    props: { postId: context.params?.id, blogPost },
+  };
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Create paths for each blog post
-  const paths = blogJSON.posts.map((post) => ({
+  const paths = blogPostsJSON.posts.map((post, index) => ({
     params: { id: post.postId },
   }));
 
   // Only pre-render these paths at build, all other routes should 404
   return { paths, fallback: false };
-}
+};
 
-export default BlogPost;
+export default PostPage;

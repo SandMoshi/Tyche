@@ -13,7 +13,7 @@ function examplePost() {
   return (
     <>
       <NavBar links={navLinks} />
-      <BlogPost 
+      {/* <BlogPost 
           heroImage={exampleImage}
           heroImageAlt='example photo'
           title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -91,7 +91,7 @@ function examplePost() {
           mauris in, malesuada leo. Sed efficitur purus tortor, ac euismod
           quam rhoncus non. Vivamus vestibulum nisl sit amet nibh blandit
           tempor."
-      />
+      /> */}
     </>
   );
 }
