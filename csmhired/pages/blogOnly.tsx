@@ -4,10 +4,8 @@ import { useEffect, useState } from "react";
 
 // imports
 import Header from "../components/header/index";
-import NavBar from "../components/navbar/navbar";
-import { navLinks } from "../data/constants";
+import { exampleImages } from "../constants";
 import { BlogRowItem } from "../components/blog/blogRowItem/blogRowItem";
-import mountainImage from "../example/images/pexels-photo-572897.jpeg";
 import fbLogo from "../data/images/svg/facebook-svgrepo-com.svg";
 import instagramLogo from "../data/images/svg/instagram-svgrepo-com.svg";
 import linkedinLogo from "../data/images/svg/linkedin-svgrepo-com.svg";
@@ -37,6 +35,7 @@ const BlogOnly: NextPage = () => {
       <div className={styles.postsContainer}>
         {dataJSON.posts.map( (post, index) => {
           return <BlogRowItem 
+                    image={exampleImages[index]}
                     key={`blogpost-id-${post.postId}-${index}`}
                     title={post.title}
                     date={post.date}

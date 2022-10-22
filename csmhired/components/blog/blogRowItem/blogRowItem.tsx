@@ -31,7 +31,7 @@ const BlogRowItem = (props: Props) => {
           ) : (
             <Image
               src={props.image || mountainImage}
-              height="256"
+              layout="responsive"
               alt={props.imageAltText || "blog post image header"}
             />
           )}

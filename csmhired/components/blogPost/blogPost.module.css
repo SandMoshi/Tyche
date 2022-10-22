@@ -79,6 +79,11 @@
     width: 70%;
 }
 
+.heroImage {
+    width: 100% !important;
+    height: auto !important;
+}
+
 .sharingLinks {
     height: 100%;
     display: flex;

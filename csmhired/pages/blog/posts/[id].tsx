@@ -1,10 +1,11 @@
 // imports
 import Header from "../../../components/header/index";
 import NavBar from "../../../components/navbar/navbar";
-import { navLinks } from "../../../data/constants";
 import exampleImage from "../../../example/images/seascape-g20cb2aa3d_1920.jpg";
 import BlogPost from "../../../components/blogPost/blogPost";
 import blogPostsJSON from "../../../public/blogposts.json";
+import { getRandomImage } from "../../../components/utils";
+import { exampleImages } from "../../../constants";
 
 // type imports
 import { GetStaticProps, GetStaticPaths } from "next";
@@ -31,14 +32,13 @@ type Props = {
 };
 
 const PostPage = (props: Props) => {
-
   return (
     <div>
       <Header includeTitle includeSubtitle />
       <>
-        <NavBar links={[]} />
+        <NavBar links={[{ href: "/", text: "Home" }]} />
         <BlogPost
-          heroImage={exampleImage}
+          heroImage={getRandomImage(exampleImages)}
           heroImageAlt="example photo"
           title={props.blogPost.title}
           tagline={props.blogPost.description}

@@ -2,18 +2,18 @@
 import Image, { StaticImageData } from 'next/image';
 
 // imports
-import exampleImage from '../../example/images/seascape-g20cb2aa3d_1920.jpg';
 import exampleIcon from '../../example/images/person-fill-svgrepo-com.svg';
 import linkedInLogo from './images/linkedin-svgrepo-com.svg';
 import facebookLogo from './images/facebook-logo-svgrepo-com.svg';
 import hyperlinkLogo from './images/link-chain-hyperlink-svgrepo-com.svg';
-import { socialMediaLinks } from '../../data/constants';
+import { socialMediaLinks, exampleImages} from '../../constants';
+import { getRandomImage } from '../utils';
 
 // style imports
 import styles from "./blogPost.module.css";
 
 type Props = {
-  heroImage: null | StaticImageData,
+  heroImage?: StaticImageData | null,
   title: string,
   tagline: string,
   content: string,
@@ -25,6 +25,7 @@ type Props = {
 }
 
 function BlogPost(props:Props) {
+
   return (
     <>
       <div className={styles.blogPostContainer}>
@@ -52,9 +53,9 @@ function BlogPost(props:Props) {
         <h3 className={styles.postTagline}>
           {props.tagline}
         </h3>
-        {props.heroImage != null &&
+        {props.heroImage !== null &&
             <div className={styles.heroImageContainer} >
-                <Image className={styles.heroImage} src={props.heroImage || exampleImage} alt={props.heroImageAlt || 'article image'}  height={undefined} width={undefined}/>
+                <Image className={styles.heroImage} src={props.heroImage || getRandomImage(exampleImages)} alt={props.heroImageAlt || 'article image'} />
             </div>
         }
         <article className={styles.article}>

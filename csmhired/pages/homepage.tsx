@@ -10,7 +10,7 @@ import icon1 from "../example/images/logo-svgrepo-com.svg";
 import icon2 from "../example/images/logo-svgrepo-com (1).svg";
 import icon3 from "../example/images/logo-svgrepo-com (2).svg";
 import tada from "../data/images/svg/partypopper-svgrepo-com.svg";
-import { navLinks } from "../data/constants";
+import { navLinks } from "../constants";
 
 // type imports
 import type { NextPage } from "next";

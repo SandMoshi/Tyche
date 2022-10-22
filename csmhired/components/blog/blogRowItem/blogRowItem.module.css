@@ -20,6 +20,8 @@
 .imageContainer {
     width: calc(100% + 2 * var(--containerPadding));
     margin-left: calc(-1 * var(--containerPadding));
+    height: 200px;
+    overflow: hidden;
 }
 
 .imageContainer img {
