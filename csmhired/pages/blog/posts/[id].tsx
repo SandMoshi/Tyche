@@ -1,7 +1,3 @@
-// VENDOR imports
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
 // imports
 import Header from "../../../components/header/index";
 import NavBar from "../../../components/navbar/navbar";
@@ -35,24 +31,12 @@ type Props = {
 };
 
 const PostPage = (props: Props) => {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.isReady) {
-      console.log("router.isReady", router.isReady);
-      const postId = router.query.id as string;
-      console.log("Sand", postId);
-    }
-    console.log(props.blogPost)
-  }, [router.isReady, router.query.id]);
-
-  console.log(props);
 
   return (
     <div>
       <Header includeTitle includeSubtitle />
       <>
-        <NavBar links={navLinks} />
+        <NavBar links={[]} />
         <BlogPost
           heroImage={exampleImage}
           heroImageAlt="example photo"
