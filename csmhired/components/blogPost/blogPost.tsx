@@ -45,8 +45,11 @@ function BlogPost(props:Props) {
           <div className={styles.sharingLinks}>
             {socialMediaLinks.linkedInUrl && <a href={socialMediaLinks.linkedInUrl}><Image src={linkedInLogo} alt="LinkedIn Link" title="LinkedIn" width={20} height={20} /></a>}
             {socialMediaLinks.facebookUrl && <a href={socialMediaLinks.facebookUrl}><Image src={facebookLogo} alt="Facebook Link" width={20} height={20} title="Facebook"  /></a>}
-            {/* TODO - programatically copy current url to clipboard */}
-            <a href={'/404'}><Image src={hyperlinkLogo} alt="Copy Web Link" title="Copy Web Link" width={20} height={20} /></a>
+            <a href="#">
+              <Image src={hyperlinkLogo} alt="Copy Web Link" title="Copy Link to Clipboard" width={20} height={20} onClick={
+                () => navigator.clipboard.writeText(window.location.href)
+              }/>
+            </a>
           </div>
         </div>
         <h1 className={styles.postTitle}>{props.title}</h1>
