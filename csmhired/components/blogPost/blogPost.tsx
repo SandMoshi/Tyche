@@ -18,7 +18,7 @@ type Props = {
   tagline: string,
   content: string,
   authorName: string,
-  authorIcon: null | string,
+  authorIcon: null | StaticImageData,
   readTime: string,
   date: string,
   heroImageAlt?: string,
@@ -32,7 +32,7 @@ function BlogPost(props:Props) {
         <div className={styles.articleHeader}>
           <div className={styles.authorImage}>
             {props.authorIcon != null && 
-                <Image src={exampleIcon} width={40} height={40} alt={props.heroImageAlt}/>
+                <Image src={props.authorIcon} width={60} height={60} alt={`Author: ${props.authorName}`}/>
             }
           </div>
           <div className={styles.articleInfo}>

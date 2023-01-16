@@ -27,7 +27,8 @@
 .authorImage img {
     text-align: center;
     z-index: 1;
-    filter: contrast(0) brightness(100);
+    object-fit: fill;
+    border-radius: 50%;
 }
 
 .articleInfo {

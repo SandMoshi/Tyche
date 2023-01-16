@@ -5,7 +5,7 @@ import exampleImage from "public/static/images/seascape-g20cb2aa3d_1920.jpg";
 import BlogPost from "../../../components/blogPost/blogPost";
 import blogPostsJSON from "../../../public/blogposts.json";
 import { getRandomImage } from "../../../components/utils";
-import { exampleImages } from "../../../constants";
+import { exampleImages, authorImages } from "../../../constants";
 
 // type imports
 import { GetStaticProps, GetStaticPaths } from "next";
@@ -43,7 +43,7 @@ const PostPage = (props: Props) => {
           title={props.blogPost.title}
           tagline={props.blogPost.description}
           authorName={props.blogPost.author}
-          authorIcon="example"
+          authorIcon={authorImages[props.blogPost.author]}
           readTime={`${props.blogPost.readTime} mins`}
           date={props.blogPost.date}
           content={props.blogPost.content}

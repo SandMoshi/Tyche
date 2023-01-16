@@ -5,6 +5,10 @@ import exampleImage3 from 'public/static/images/pexels-photo-572897.jpeg';
 import exampleImage4 from 'public/static/images/seascape-g20cb2aa3d_1920.jpg';
 import exampleImage5 from 'public/static/images/stars-gac377546d_640.jpg';
 import exampleImage6 from 'public/static/images/taiwan-g64f6b6773_640.jpg';
+import melanieMoshiHeadshot from 'public/static/images/people/melanie_moshi.jpg';
+
+// type imports
+import { StaticImageData } from 'next/image';
 
 const navLinks = [
     {href:'/', text: 'Jobs'},
@@ -26,6 +30,9 @@ const exampleImages = [
     exampleImage3,
     exampleImage1,
   ]
-  
 
-export { navLinks, socialMediaLinks, exampleImages }
+const authorImages: {[name: string]: StaticImageData} = {
+    'Melanie Moshi': melanieMoshiHeadshot
+}
+
+export { navLinks, socialMediaLinks, exampleImages, authorImages }
