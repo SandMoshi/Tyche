@@ -2,7 +2,7 @@
 import Image, { StaticImageData } from 'next/image';
 
 // imports
-import exampleIcon from '../../example/images/person-fill-svgrepo-com.svg';
+import exampleIcon from 'public/static/images/person-fill-svgrepo-com.svg';
 import linkedInLogo from './images/linkedin-svgrepo-com.svg';
 import facebookLogo from './images/facebook-logo-svgrepo-com.svg';
 import hyperlinkLogo from './images/link-chain-hyperlink-svgrepo-com.svg';

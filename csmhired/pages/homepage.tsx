@@ -6,9 +6,9 @@ import NavBar from "../components/navbar/navbar";
 import SearchBar from "../components/searchBar/searchBar";
 import RowItem from "../components/rowItem/rowItem";
 import QuickFiltersRow from "../components/quickFiltersRow/quickFiltersRow";
-import icon1 from "../example/images/logo-svgrepo-com.svg";
-import icon2 from "../example/images/logo-svgrepo-com (1).svg";
-import icon3 from "../example/images/logo-svgrepo-com (2).svg";
+import icon1 from "public/static/images/logo-svgrepo-com.svg";
+import icon2 from "public/static/images/logo-svgrepo-com (1).svg";
+import icon3 from "public/static/images/logo-svgrepo-com (2).svg";
 import tada from "../data/images/svg/partypopper-svgrepo-com.svg";
 import { navLinks } from "../constants";
 

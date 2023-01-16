@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // imports
-import mountainImage from "../../../example/images/pexels-photo-572897.jpeg";
+import mountainImage from "public/static/images/pexels-photo-572897.jpeg";
 
 // style imporst
 import styles from "./blogRowItem.module.css";

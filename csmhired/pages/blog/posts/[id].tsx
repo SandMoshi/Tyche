@@ -1,7 +1,7 @@
 // imports
 import Header from "../../../components/header/index";
 import NavBar from "../../../components/navbar/navbar";
-import exampleImage from "../../../example/images/seascape-g20cb2aa3d_1920.jpg";
+import exampleImage from "public/static/images/seascape-g20cb2aa3d_1920.jpg";
 import BlogPost from "../../../components/blogPost/blogPost";
 import blogPostsJSON from "../../../public/blogposts.json";
 import { getRandomImage } from "../../../components/utils";

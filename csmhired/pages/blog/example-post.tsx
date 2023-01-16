@@ -3,8 +3,8 @@
 // imports
 import NavBar from "../../components/navbar/navbar";
 import { navLinks } from "../../constants";
-import exampleImage from '../../example/images/seascape-g20cb2aa3d_1920.jpg';
-import BlogPost from '../../components/blogPost/blogPost';
+import exampleImage from "public/static/images/seascape-g20cb2aa3d_1920.jpg";
+import BlogPost from "../../components/blogPost/blogPost";
 
 // style imports
 import styles from "./blog.module.css";
