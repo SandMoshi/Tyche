@@ -137,4 +137,11 @@
     .articleInfo span:not(:first-child):before {
         content: "";
     }
+
+    .heroImageContainer {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        max-height: 30vh;
+    }
 }
