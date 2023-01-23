@@ -291,7 +291,8 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* Enable Dark Mode support in the future */
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
@@ -302,4 +303,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */

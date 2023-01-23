@@ -17,7 +17,8 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Enable Dark Mode support in the future */
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -25,7 +26,7 @@ a {
     color: white;
     background: black;
   }
-}
+} */
 
 @media (max-width: 700px) {
   html {
