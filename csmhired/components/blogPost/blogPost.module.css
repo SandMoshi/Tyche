@@ -121,6 +121,7 @@
 
     .articleHeader{
         position: relative;
+        margin: initial;
     }
 
     .sharingLinks{
