@@ -33,7 +33,7 @@ type Props = {
 
 const PostPage = (props: Props) => {
   return (
-    <div>
+    <div className={styles.blogPostBody}>
       <Header includeTitle includeSubtitle />
       <>
         <NavBar links={[{ href: "/", text: "Home" }]} />
@@ -49,7 +49,6 @@ const PostPage = (props: Props) => {
           content={props.blogPost.content}
         />
       </>
-      );
     </div>
   );
 };

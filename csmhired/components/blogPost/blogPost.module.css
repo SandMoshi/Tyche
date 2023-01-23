@@ -1,14 +1,14 @@
 .blogPostContainer {
     margin: 8rem auto auto auto;
-    width: 60%;
+    width: 70%;
 }
 
 .articleHeader {
-    width: 100%;
+    margin: auto;
+    width: 80%;
     max-width: 900px;
     display: flex;
     align-items: center;
-    /* border: solid 2px #e8e8e8; */
     border-radius: 1rem;
     padding: 0rem 0px;
     height: 100px;
@@ -104,4 +104,36 @@
 
 .sharingLinks a:hover {
     fill: red;
+}
+
+@media (max-width: 800px){
+    .blogPostContainer{
+        width: 90%
+    }
+
+    .postTitle {
+        font-size: 2.75rem;
+    }
+
+    .postTagline {
+        font-size: 1.5rem;
+    }
+
+    .articleHeader{
+        position: relative;
+    }
+
+    .sharingLinks{
+        position: absolute;
+        top: -6px;
+        right: -80px;
+    }
+
+    .articleDetails {
+        flex-direction: column;
+    }
+
+    .articleInfo span:not(:first-child):before {
+        content: "";
+    }
 }

@@ -6,7 +6,7 @@
     height: 150px;
     z-index: 0;
     background: #4e3a55;
-    z-index: -1;
+    z-index: 0;
   }
 
 .tada {
@@ -154,8 +154,8 @@
 }
 
 .tagline {
+  position: relative;
   font-family: Poppins;
-  /* font-style: italic; */
   font-weight: 300;
 }
 

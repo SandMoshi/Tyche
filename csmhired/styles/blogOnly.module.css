@@ -60,4 +60,9 @@
   width: 60rem;
 }
 
-@media (max-width: 700px) {}
+@media (max-width: 800px) {
+  .postsContainer{
+    max-width: 95%;
+    margin-top: 8rem;
+  }
+}
