@@ -3,10 +3,20 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    flex: 1;
+    margin: 0.25rem 0.5rem 1rem 0.5rem;
+    background: hsl(284deg 30% 90%);
+    border-color: white;
+    border: solid 4px hsl(284deg 30% 90%);
+    border-right: solid 10px hsl(284deg 30% 90%);
+    padding-right: 0px;
 }
 
 .container > select {
-    margin: auto 0.5rem;
     font-family: Poppins;
 }
 

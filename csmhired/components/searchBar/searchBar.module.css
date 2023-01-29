@@ -35,3 +35,13 @@
 .input:focus-visible {
     outline-style: none;
 }
+
+@media (max-width: 800px){
+    .searchbar {
+        width: 100%;
+    }
+
+    .input {
+        font-size: 1.5rem;
+    }
+}
