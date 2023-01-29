@@ -1,7 +1,7 @@
 
 // imports
 import Head from "next/head";
-import BlogOnly from './blogOnly';
+import Homepage from './homepage';
 
 
 // type imports
@@ -18,7 +18,7 @@ const Index: NextPage = () => {
             <meta name="description" content="Customer Success (CSM) Job Board" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <BlogOnly />
+        <Homepage />
         </div>
     
     )
