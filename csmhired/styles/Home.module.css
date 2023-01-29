@@ -128,8 +128,9 @@
 
 .tagline {
   font-family: Poppins;
-  /* font-style: italic; */
   font-weight: 300;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .searchBarContainer {
@@ -278,8 +279,8 @@
 }
 
 .tada {
-  margin-top: 4rem;
-  opacity: 0.8;
+  margin-top: 5rem;
+  opacity: 0.1;
   margin-left: 0;
 }
 
@@ -305,3 +306,24 @@
     filter: invert(1);
   }
 } */
+
+@media (max-width: 800px) {
+  .main{
+    padding: 0px 5%;
+    margin-top: 0px;
+  }
+
+  .tada {
+    /* max-width: 300px; */
+    /* margin: auto; */
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .searchBarContainer {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
