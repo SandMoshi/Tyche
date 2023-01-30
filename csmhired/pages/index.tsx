@@ -8,7 +8,7 @@ import Homepage from './homepage';
 import type { NextPage } from 'next';
 
 // style imports
-import styles from "../styles/Home.module.css";
+import styles from "../styles/homepage.module.css";
 
 const Index: NextPage = () => {
     return(

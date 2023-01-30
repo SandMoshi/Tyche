@@ -10,14 +10,13 @@ import QuickFiltersRow from "../components/quickFiltersRow/quickFiltersRow";
 import icon1 from "public/static/images/logo-svgrepo-com.svg";
 import icon2 from "public/static/images/logo-svgrepo-com (1).svg";
 import icon3 from "public/static/images/logo-svgrepo-com (2).svg";
-import tada from "../data/images/svg/partypopper-svgrepo-com.svg";
 import { navLinks } from "../constants";
 
 // type imports
 import type { NextPage } from "next";
 
 // style imports
-import styles from "../styles/Home.module.css";
+import styles from "../styles/homepage.module.css";
 
 const Homepage: NextPage = () => {
   return (
