@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // imports
 import NavBar from "../components/navbar/navbar";
+import Header from "../components/header/header";
 import SearchBar from "../components/searchBar/searchBar";
 import RowItem from "../components/rowItem/rowItem";
 import QuickFiltersRow from "../components/quickFiltersRow/quickFiltersRow";
@@ -23,18 +24,7 @@ const Homepage: NextPage = () => {
     <>
       <main className={styles.main}>
         <NavBar links={navLinks} />
-        <div className={styles.mainBackground}>
-          <div className={styles.wave}></div>
-          <div className={styles.tada}>
-            <Image src={tada} alt="tada!" height="450" width="450" />
-          </div>
-        </div>
-        <h1 className={styles.title}>
-          <span>CSM</span>hired
-        </h1>
-        <h2 className={styles.tagline}>Helping CSMs find their dream job</h2>
-        {/* <h2 style={{fontStyle: 'italic'}}>Find your next customer success job here.</h2> */}
-
+        <Header includeTitle includeSubtitle/>
         <div className={styles.searchBarContainer}>
           <SearchBar />
         </div>

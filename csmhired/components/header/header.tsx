@@ -5,14 +5,14 @@ import Image from "next/image";
 import tada from "../../data/images/svg/partypopper-svgrepo-com.svg";
 
 // style imports
-import styles from "./styles.module.css";
+import styles from "./header.module.css";
 
 const Header = (props: {
   includeTitle?: boolean;
   includeSubtitle?: boolean;
 }) => {
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.mainBackground}>
         <div className={styles.wave}></div>
         <div className={styles.tada}>
@@ -32,7 +32,7 @@ const Header = (props: {
       {props.includeSubtitle && (
         <h2 className={styles.tagline}>Helping CSMs find their dream job</h2>
       )}
-    </>
+    </div>
   );
 };
 

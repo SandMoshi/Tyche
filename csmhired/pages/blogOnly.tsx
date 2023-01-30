@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 // imports
-import Header from "../components/header/index";
+import Header from "../components/header/header";
 import { exampleImages } from "../constants";
 import { BlogRowItem } from "../components/blog/blogRowItem/blogRowItem";
 import fbLogo from "../data/images/svg/facebook-svgrepo-com.svg";
