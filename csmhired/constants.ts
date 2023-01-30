@@ -13,7 +13,7 @@ import { StaticImageData } from 'next/image';
 const navLinks = [
     {href:'/', text: 'Jobs'},
     {href:'/blog', text: 'Blog'},
-    {href:'/resources', text: 'Resources'},
+    {href:'/resources', text: 'Resources', disabled: true},
     {href:'/post', text: 'Post a Listing'}
 ]
 

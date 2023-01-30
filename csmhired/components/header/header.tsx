@@ -10,6 +10,7 @@ import styles from "./header.module.css";
 const Header = (props: {
   includeTitle?: boolean;
   includeSubtitle?: boolean;
+  isBlogPage?: boolean,
 }) => {
   return (
     <div className={styles.container}>
@@ -25,7 +26,7 @@ const Header = (props: {
             <h1 className={styles.title}>
               <span>CSM</span>hired
             </h1>
-            <h1 className={styles.miniBold}>BLOG</h1>
+            {props.isBlogPage && <h1 className={styles.miniBold}>BLOG</h1>}
           </div>
         </>
       )}

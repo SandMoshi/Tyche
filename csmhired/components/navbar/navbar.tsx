@@ -8,6 +8,7 @@ type Props = {
   links: Array<{
     href: string;
     text: string;
+    disabled?: boolean;
   }>;
 };
 
@@ -15,7 +16,7 @@ function NavBar(props: Props) {
   return (
     <nav className={styles.navbar}>
       {props.links.map((link) => (
-        <Link href={link.href} key={link.href}>
+        !link.disabled && <Link href={link.href} key={link.href}>
           <a className={styles.navlink}>{link.text}</a>
         </Link>
       ))}
