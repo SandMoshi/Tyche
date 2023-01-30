@@ -31,6 +31,7 @@ const Homepage: NextPage = () => {
           <QuickFiltersRow />
         </div>
         <div className={styles.postingsContainer}>
+          <h3>Available Jobs:</h3>
           <RowItem
             title="Company A"
             description="Better perks, Better pay. Company A."

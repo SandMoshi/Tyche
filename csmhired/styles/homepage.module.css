@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  width: 80%;
+  margin: auto;
 }
 
 .footer {
@@ -111,15 +113,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  color: #333;
 }
 
-/* MOST OF MEDIA QUERIES ARE FROM NEXT */
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.postingsContainer h3 {
+  color: #333;
+  margin-right: auto;
 }
 
 /* Enable Dark Mode support in the future */
@@ -140,6 +139,7 @@
   .main{
     padding: 0px 5%;
     margin-top: 0px;
+    width: 100%;
   }
 
   .searchBarContainer {

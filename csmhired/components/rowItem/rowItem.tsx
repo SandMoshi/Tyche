@@ -17,12 +17,12 @@ type Props = {
 function RowItem(props: Props){
 
     const icon = props.icon ? 
-        <div className='iconContainer'>
+        <div className={styles.icon}>
             <Image 
                 src={props.icon}
                 alt={props.iconAlt || "Icon"}
-                width={props.width || 70}
-                height={props.height || 70}
+                layout='fill'
+                objectFit='contain'
             />
         </div> : null;
 
@@ -30,7 +30,7 @@ function RowItem(props: Props){
         <div className={styles.iconContainer}>
             {icon}
         </div>
-        <div>
+        <div className={styles.rightSide}>
             <span className={styles.title}>{props.title}</span>
             <p className={styles.description}>{props.description}</p>
         </div>
