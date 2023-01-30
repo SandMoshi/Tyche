@@ -37,7 +37,7 @@
 }
 
 .title {
-  margin: 0;
+  margin-bottom: 0;
   line-height: 1.15;
   font-size: 4rem;
   color: white;
@@ -164,7 +164,7 @@
 
 .wave {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: -30%;
   width: 130%;
   height: 500px;
@@ -325,5 +325,10 @@
   .searchBarContainer {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .wave {
+    margin-top: 245px;
+    transform: scale(1, 0.5);
   }
 }
