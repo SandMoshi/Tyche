@@ -11,15 +11,18 @@ const Header = (props: {
   includeTitle?: boolean;
   includeSubtitle?: boolean;
   isBlogPage?: boolean,
+  includeBackground?: boolean
 }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.mainBackground}>
-        <div className={styles.wave}></div>
-        <div className={styles.tada}>
-          <Image src={tada} alt="tada!" height="300" width="300" />
+      {props.includeBackground && 
+        <div className={styles.mainBackground}>
+          <div className={styles.wave}></div>
+          <div className={styles.tada}>
+            <Image src={tada} alt="tada!" height="300" width="300" />
+          </div>
         </div>
-      </div>
+      }
       {props.includeTitle && (
         <>
           <div className={styles.titleContainer}>

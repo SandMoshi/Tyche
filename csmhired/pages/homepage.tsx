@@ -30,6 +30,7 @@ const Homepage: NextPage = () => {
         <div className={styles.quickFiltersRow}>
           <QuickFiltersRow />
         </div>
+        <div className={styles.wave}></div>
         <div className={styles.postingsContainer}>
           <h3>Available Jobs:</h3>
           <RowItem

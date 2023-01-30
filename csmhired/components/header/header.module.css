@@ -1,13 +1,11 @@
 .container {
-  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
+  background: #4e3a55;
 }
 
 .mainBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     z-index: -1;
     background: #4e3a55
@@ -201,7 +199,7 @@ h2.tagline {
   .mainBackground {
     height: 430px;
   }
-  
+
   .wave {
     position: absolute;
     left: -22px;
