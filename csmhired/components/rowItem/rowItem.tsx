@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 // style imports
-import styles from './rowItem.module.css';
+import styles from './rowItem.module.scss';
 
 
 type Props = {

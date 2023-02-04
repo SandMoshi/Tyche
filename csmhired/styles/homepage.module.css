@@ -252,4 +252,9 @@
   .searchBarContainer {
     padding-top: 1rem;
   }
+
+  .jobPosts {
+    width: 100vw;
+    box-shadow: 0px 3px 5px #ccc;
+  }
 }

@@ -33,21 +33,23 @@ const Homepage: NextPage = () => {
         <div className={styles.wave}></div>
         <div className={styles.postingsContainer}>
           <h3>Available Jobs:</h3>
-          <RowItem
-            title="Company A"
-            description="Better perks, Better pay. Company A."
-            icon={icon1}
-          />
-          <RowItem
-            title="Company B"
-            description="My perks better, my training better, my pay better. Everything better!"
-            icon={icon2}
-          />
-          <RowItem
-            title="Company C"
-            description="My perks better, my training better, my pay better. Everything better!"
-            icon={icon3}
-          />
+          <div className={styles.jobPosts}>
+            <RowItem
+              title="Company A"
+              description="Better perks, Better pay. Company A."
+              icon={icon1}
+            />
+            <RowItem
+              title="Company B"
+              description="My perks better, my training better, my pay better. Everything better!"
+              icon={icon2}
+            />
+            <RowItem
+              title="Company C"
+              description="My perks better, my training better, my pay better. Everything better!"
+              icon={icon3}
+            />
+          </div>
         </div>
       </main>
 
