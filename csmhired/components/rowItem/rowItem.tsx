@@ -43,7 +43,7 @@ function RowItem(props: Props){
                     <p className={styles.description}>{props.description}</p>
                 </div>
             </div>
-            {isExpanded && <ExpandedContent/>}
+            <ExpandedContent isExpanded={isExpanded}/>
         </>
     )
 }
