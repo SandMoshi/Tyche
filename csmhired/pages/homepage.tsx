@@ -10,6 +10,7 @@ import QuickFiltersRow from "../components/quickFiltersRow/quickFiltersRow";
 import icon1 from "public/static/images/logo-svgrepo-com.svg";
 import icon2 from "public/static/images/logo-svgrepo-com (1).svg";
 import icon3 from "public/static/images/logo-svgrepo-com (2).svg";
+import csmHiredIcon  from "public/static/images/corporate/logo_on_top.png"
 import { navLinks } from "../constants";
 
 // type imports
@@ -55,14 +56,9 @@ const Homepage: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
         >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          <Image src={csmHiredIcon} alt="csmHired logo" width={80} height={80}/>
         </a>
       </footer>
     </>
