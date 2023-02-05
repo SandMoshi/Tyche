@@ -16,7 +16,7 @@ const ExpandedContent = (props: Props) => {
     const animatedHeight = useSpring({height: props.isExpanded ? bounds.height : 0, overflow: 'hidden'});
 
     return (
-        <animated.div style={animatedHeight}>
+        <animated.div className={styles.animatedContainer} style={animatedHeight}>
             <div className={styles.container}  ref={ref}>
                 <p>Extra info here</p>
             </div>
