@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   background: #4e3a55;
+  flex-direction: column;
 }
 
 .footer a {
@@ -227,6 +228,17 @@
     100% 50.74%
   );
   z-index: -1;
+}
+
+.smallDisclaimer {
+  font-size: 10px;
+  width: 90vw;
+  color: rgb(25, 6, 34);
+  color: rgba(255,255,255,0.5);
+}
+
+.copyright {
+  color: white;
 }
 
 /* Enable Dark Mode support in the future */
