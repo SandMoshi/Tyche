@@ -58,7 +58,7 @@ const Homepage: NextPage = () => {
         <a
           href="#"
         >
-          <Image src={csmHiredIcon} alt="csmHired logo" width={80} height={80}/>
+          <Image src={csmHiredIcon} alt="csmHired logo" width={80} height={80} objectFit={'contain'}/>
         </a>
         <p className={styles.copyright}>Copyright © 2023 CSMhired. All rights reserved.</p>
         <p className={styles.smallDisclaimer}>
