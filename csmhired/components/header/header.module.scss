@@ -1,14 +1,16 @@
+@import '../../styles/variables.module';
+
 .container {
   width: 100vw;
   overflow-x: hidden;
-  background: #4e3a55;
+  background: $primaryPurple1;
 }
 
 .mainBackground {
     width: 100vw;
     height: 500px;
     z-index: -1;
-    background: #4e3a55
+    background: $primaryPurple1
   }
 
 .tada {
@@ -23,7 +25,7 @@
   left: -20px;
   width: calc( 100% + 20px);
   height: 500px;
-  background: #4e3a55;
+  background: $primaryPurple1;
   transform: scaleY(0.75);
   clip-path: polygon(
     100% 0%,
@@ -192,6 +194,12 @@ h2.tagline {
   margin-bottom: 0rem;
   margin-top: 3.5rem;
   margin-left: 2rem;
+}
+
+.extraPadding {
+  background: $primaryPurple1;
+  height: 2rem;
+  width: 100%;
 }
 
 @media (max-width: 800px) {

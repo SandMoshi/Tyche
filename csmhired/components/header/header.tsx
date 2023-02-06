@@ -5,7 +5,7 @@ import Image from "next/image";
 import tada from "../../data/images/svg/partypopper-svgrepo-com.svg";
 
 // style imports
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 const Header = (props: {
   includeTitle?: boolean;
@@ -26,16 +26,16 @@ const Header = (props: {
       {props.includeTitle && (
         <>
           <div className={styles.titleContainer}>
-            <h1 className={styles.title}>
+            <h1 className={styles.title} style={!props.includeSubtitle && {marginTop: '2rem'} || {}}>
               <span>CSM</span>hired
             </h1>
             {props.isBlogPage && <h1 className={styles.miniBold}>BLOG</h1>}
           </div>
         </>
       )}
-      {props.includeSubtitle && (
+      {props.includeSubtitle ? 
         <h2 className={styles.tagline}>Helping CSMs find their dream job</h2>
-      )}
+      : <div className={styles.extraPadding} />}
     </div>
   );
 };
