@@ -13,12 +13,12 @@ import styles from "../styles/homepage.module.css";
 const Index: NextPage = () => {
     return(
         <div className={styles.container}>
-        <Head>
-            <title>CSM Hired</title>
-            <meta name="description" content="Customer Success (CSM) Job Board" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Homepage />
+            <Head>
+                <title>CSM Hired</title>
+                <meta name="description" content="Customer Success (CSM) Job Board" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Homepage />
         </div>
     
     )

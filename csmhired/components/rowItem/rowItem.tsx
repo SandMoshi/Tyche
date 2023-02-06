@@ -1,6 +1,8 @@
 // vendor imports
 import Image from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
+
 
 // imports
 import { ExpandedContent } from './expandedContent/expandedContent';
@@ -16,6 +18,7 @@ type Props = {
     iconAlt?: string,
     width?: number,
     height?: number,
+    jobId: number | string,
 } 
 
 function RowItem(props: Props){
@@ -34,12 +37,14 @@ function RowItem(props: Props){
 
     return ( 
         <>
-            <div className={styles.rowItem} onClick={() => setExpanded(prevValue => !prevValue)}>
+            <div className={styles.rowItem} onClick={(e) => (e.target as HTMLAnchorElement).tagName != "A" && setExpanded(prevValue => !prevValue)}>
                 <div className={styles.iconContainer}>
                     {icon}
                 </div>
                 <div className={styles.rightSide}>
-                    <span className={styles.title}>{props.title}</span>
+                    <Link href={`/jobs/${props.jobId}`} passHref >
+                        <a className={styles.title} target="_blank">{props.title}</a>
+                    </Link>
                     <p className={styles.description}>{props.description}</p>
                 </div>
             </div>
