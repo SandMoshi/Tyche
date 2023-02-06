@@ -14,7 +14,7 @@ const navLinks = [
     {href:'/', text: 'Jobs'},
     {href:'/blog', text: 'Blog'},
     {href:'/resources', text: 'Resources', disabled: true},
-    {href:'/post', text: 'Post a Listing'}
+    {href:'/post', text: 'Post a Job'}
 ]
 
 const socialMediaLinks = {
