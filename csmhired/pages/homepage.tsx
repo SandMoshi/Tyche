@@ -36,17 +36,18 @@ const Homepage: NextPage = () => {
           <h3>Available Jobs:</h3>
           <div className={styles.jobPosts}>
             <RowItem
-              title="Company A"
-              description="Better perks, Better pay. Company A."
+              title="Position A | Company A"
+              // description={["Better perks, Better pay. Company A."," My perks better, my training better, my pay better. Everything better!"]}
+              description={`Better perks, Better pay. Company A. My perks better, my training better, my pay better.\n Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better!Everything better!Everything better!Everything better!Everything better!`}
               icon={icon1}
             />
             <RowItem
-              title="Company B"
+              title="Position B | Company B"
               description="My perks better, my training better, my pay better. Everything better!"
               icon={icon2}
             />
             <RowItem
-              title="Company C"
+              title="Position C | Company C"
               description="My perks better, my training better, my pay better. Everything better!"
               icon={icon3}
             />
