@@ -10,7 +10,7 @@ import QuickFiltersRow from "../components/quickFiltersRow/quickFiltersRow";
 import icon1 from "public/static/images/logo-svgrepo-com.svg";
 import icon2 from "public/static/images/logo-svgrepo-com (1).svg";
 import icon3 from "public/static/images/logo-svgrepo-com (2).svg";
-import csmHiredIcon  from "public/static/images/corporate/logo_on_top_white_transparent.png"
+import csmHiredIcon from "public/static/images/corporate/logo_on_top_white_transparent.png";
 import { navLinks } from "../constants";
 
 // type imports
@@ -24,7 +24,7 @@ const Homepage: NextPage = () => {
     <>
       <main className={styles.main}>
         <NavBar links={navLinks} />
-        <Header includeTitle includeSubtitle/>
+        <Header includeTitle includeSubtitle />
         <div className={styles.searchBarContainer}>
           <SearchBar />
         </div>
@@ -40,34 +40,51 @@ const Homepage: NextPage = () => {
               // description={["Better perks, Better pay. Company A."," My perks better, my training better, my pay better. Everything better!"]}
               description={`Better perks, Better pay. Company A. My perks better, my training better, my pay better.\n Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better! Everything better!Everything better!Everything better!Everything better!Everything better!`}
               icon={icon1}
-              jobId='000111'
+              jobId={"j" + Math.round(Math.random() * 12)}
             />
             <RowItem
               title="Position B | Company B"
               description="My perks better, my training better, my pay better. Everything better!"
               icon={icon2}
-              jobId='000222'
+              jobId={"j" + Math.round(Math.random() * 12)}
             />
             <RowItem
               title="Position C | Company C"
               description="My perks better, my training better, my pay better. Everything better!"
               icon={icon3}
-              jobId='000333'
+              jobId={"j" + Math.round(Math.random() * 12)}
             />
           </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="#"
-        >
-          <Image src={csmHiredIcon} alt="csmHired logo" width={80} height={80} objectFit={'contain'}/>
+        <a href="#">
+          <Image
+            src={csmHiredIcon}
+            alt="csmHired logo"
+            width={80}
+            height={80}
+            objectFit={"contain"}
+          />
         </a>
-        <p className={styles.copyright}>Copyright © 2023 CSMhired. All rights reserved.</p>
+        <p className={styles.copyright}>
+          Copyright © 2023 CSMhired. All rights reserved.
+        </p>
         <p className={styles.smallDisclaimer}>
-          All content on this website is protected by copyright laws and may not be reproduced, distributed, transmitted, displayed, published, or broadcast without the prior written permission of csmhired.com. The information on this website is for general informational purposes only and is subject to change without notice. CSMhired makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. By using CSMhired and csmhired.com, you agree to these terms as well as the "Terms of Service" and any future modifications.
-
+          All content on this website is protected by copyright laws and may not
+          be reproduced, distributed, transmitted, displayed, published, or
+          broadcast without the prior written permission of csmhired.com. The
+          information on this website is for general informational purposes only
+          and is subject to change without notice. CSMhired makes no
+          representations or warranties of any kind, express or implied, about
+          the completeness, accuracy, reliability, suitability, or availability
+          with respect to the website or the information, products, services, or
+          related graphics contained on the website for any purpose. Any
+          reliance you place on such information is therefore strictly at your
+          own risk. By using CSMhired and csmhired.com, you agree to these terms
+          as well as the &quot;Terms of Service&quot; and any future
+          modifications.
         </p>
       </footer>
     </>
