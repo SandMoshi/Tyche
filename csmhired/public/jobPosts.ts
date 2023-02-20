@@ -18,6 +18,7 @@ const jobPost1: jobData = {
   currency: "USD",
   location: "New York, NY",
   remote: "onsite",
+  datePosted: "2023-02-01T14:30:00",
 };
 
 const jobPost2: jobData = {
@@ -30,6 +31,7 @@ const jobPost2: jobData = {
   currency: "USD",
   location: "Los Angeles, CA",
   remote: "remote",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPost3: jobData = {
@@ -42,6 +44,7 @@ const jobPost3: jobData = {
   currency: "USD",
   location: "San Francisco, CA",
   remote: "onsite",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPost4: jobData = {
@@ -54,6 +57,7 @@ const jobPost4: jobData = {
   currency: "USD",
   location: "Seattle, WA",
   remote: "hybrid",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPost5: jobData = {
@@ -66,6 +70,7 @@ const jobPost5: jobData = {
   currency: "USD",
   location: "Austin, TX",
   remote: "remote",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPost6: jobData = {
@@ -78,6 +83,7 @@ const jobPost6: jobData = {
   currency: "USD",
   location: "Chicago, IL",
   remote: "onsite",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPost7: jobData = {
@@ -90,6 +96,7 @@ const jobPost7: jobData = {
   currency: "USD",
   location: "Detroit, MI",
   remote: "hybrid",
+  datePosted: "2023-01-01T14:30:00",
 };
 
 const jobPostsData: jobsData = {

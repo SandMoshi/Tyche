@@ -6,6 +6,7 @@ import Header from "../../components/header/header";
 import NavBar from "../../components/navbar/navbar";
 import { jobPostsData } from "../../public/jobPosts";
 import { navLinks } from "../../constants";
+import { getPostingAge } from "../../utils/getPostingAge";
 
 // type imports
 import type { jobData } from "../../public/jobPosts";
@@ -55,28 +56,43 @@ const JobPostPage = (props: Props) => {
       currency = "$";
   }
 
+  const postingAge = getPostingAge({ datePosted: props.jobData.datePosted });
+
   return (
     <div className={styles.jobPostBody}>
       <NavBar links={navLinks} />
       <Header includeTitle />
       <div className={styles.container}>
         <div className={styles.heading}>
-          <h1>{props.jobData.title}</h1>
-          <h2>{props.jobData.company}</h2>
+          <h1 className={styles.jobTitle}>{props.jobData.title}</h1>
+          <h2 className={styles.company}>{props.jobData.company}</h2>
         </div>
+        {postingAge && (
+          <p className={styles.postingAge}>Posted {postingAge} ago</p>
+        )}
         <h3>Key Details</h3>
         <div className={styles.detailsRow}>
           <span className={styles.salary}>
+            <span className={styles.label}>Salary</span>
+            <span className={styles.pipe}>&#124;&nbsp;</span>
             {currency}
             {props.jobData.salary.replace(new RegExp(/000$/), "k")}
           </span>
-          <span className={styles.remote}>{props.jobData.remote}</span>
-          <span className={styles.location}>{props.jobData.location}</span>
+          <span className={styles.remote}>
+            <span className={styles.label}> Work from</span>
+            <span className={styles.pipe}>&#124;&nbsp;</span>
+            {props.jobData.remote}
+          </span>
+          <span className={styles.location}>
+            <span className={styles.label}>Location</span>
+            <span className={styles.pipe}>&#124;&nbsp;</span>
+            {props.jobData.location}
+          </span>
         </div>
         <span className={styles.subheading}></span>
         <h3>Job Description</h3>
         <p className={styles.description}>{props.jobData.description}</p>
-        <h2 className={styles.applyBtn}>Apply Now</h2>
+        <h2 className={styles.applyBtn}>APPLY NOW</h2>
       </div>
     </div>
   );
