@@ -10,24 +10,6 @@
   overflow-x: hidden;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  background: #4e3a55;
-  flex-direction: column;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .description {
   margin: 4rem 0;
   line-height: 1.5;
@@ -89,7 +71,9 @@
 
 /* EVERYTHING ABOVE IS FROM NEXT JS */
 
-.main h3, .main h4, .main h2{
+.main h3,
+.main h4,
+.main h2 {
   color: white;
 }
 
@@ -99,7 +83,7 @@
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
-    /* width: 100vw; */
+  /* width: 100vw; */
   background: #4e3a55;
 }
 
@@ -117,7 +101,7 @@
 }
 
 .wave {
-  width: calc( 100vw + 20px);
+  width: calc(100vw + 20px);
   height: 100px;
   margin-top: -20px;
   margin-bottom: -30px;
@@ -230,17 +214,6 @@
   z-index: -1;
 }
 
-.smallDisclaimer {
-  font-size: 10px;
-  width: 90vw;
-  color: rgb(25, 6, 34);
-  color: rgba(255,255,255,0.5);
-}
-
-.copyright {
-  color: white;
-}
-
 /* Enable Dark Mode support in the future */
 /* @media (prefers-color-scheme: dark) {
   .card,
@@ -256,7 +229,7 @@
 } */
 
 @media (max-width: 800px) {
-  .main{
+  .main {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 0px;
