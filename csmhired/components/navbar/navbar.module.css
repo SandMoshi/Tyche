@@ -1,33 +1,32 @@
 .navbar {
-    font-size: 1.2rem;
-    width: 100vw;
-    font-family: Poppins;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    background: #68576e;
-    padding: 0.5rem 0rem;
+  font-size: 1.2rem;
+  width: 100vw;
+  font-family: Poppins;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background: #68576e;
+  padding: 0.5rem 0rem;
 }
 
 .navlink {
-    flex: 1;
-    margin: auto 0.5rem;
-    padding: 1rem 1rem 0.5rem 1rem;
-    color: white;
-    white-space: pre;
-    position: relative;
-    border-bottom: 2px solid transparent;
-
+  flex: 1;
+  margin: auto 0.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: white;
+  white-space: pre;
+  position: relative;
+  border-bottom: 2px solid transparent;
 }
 
 .navlink:hover {
-    border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .navlink:not(:first-of-type):before {
-    content: '';
-    height: 40%;
-    border-left: solid hsla(0, 0%, 100%, 30%) 1px;
-    position: absolute;
-    left: -0.5rem
+  content: "";
+  height: 40%;
+  border-left: solid hsla(0, 0%, 100%, 30%) 1px;
+  position: absolute;
+  left: -0.5rem;
 }

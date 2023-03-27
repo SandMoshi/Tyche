@@ -1,0 +1,24 @@
+/* Post Page Styles */
+
+@import "../../styles/variables.module";
+
+.container {
+  background-color: $secondaryPurple1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $primaryPurple1;
+  color: black;
+  min-height: 55vh;
+
+  h3 {
+    text-align: center;
+    line-height: 2.5rem;
+    color: $primaryPurple1;
+    font-style: italic;
+  }
+}

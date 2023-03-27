@@ -1,4 +1,4 @@
-@import '../../styles/variables.module';
+@import "../../styles/variables.module";
 
 .container {
   width: 100vw;
@@ -7,11 +7,11 @@
 }
 
 .mainBackground {
-    width: 100vw;
-    height: 500px;
-    z-index: -1;
-    background: $primaryPurple1
-  }
+  width: 100vw;
+  height: 500px;
+  z-index: -1;
+  background: $primaryPurple1;
+}
 
 .tada {
   margin-top: 5rem;
@@ -23,7 +23,7 @@
   position: absolute;
   top: 430px;
   left: -20px;
-  width: calc( 100% + 20px);
+  width: calc(100% + 20px);
   height: 500px;
   background: $primaryPurple1;
   transform: scaleY(0.75);
@@ -135,7 +135,6 @@
   z-index: -1;
 }
 
-
 .titleContainer {
   display: flex;
   flex-direction: row;
@@ -202,8 +201,15 @@ h2.tagline {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+.customTitle {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  text-transform: uppercase;
+}
 
+@media (max-width: 800px) {
   .mainBackground {
     height: 430px;
   }
@@ -217,14 +223,14 @@ h2.tagline {
     height: 170px;
   }
 
-  .title{
+  .title {
     font-size: 4rem;
   }
-  .miniBold{
+  .miniBold {
     font-size: 4rem;
   }
 
-  .tada img{
+  .tada img {
     max-height: 200px;
   }
 
